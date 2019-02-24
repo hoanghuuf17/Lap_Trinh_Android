@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dask"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/dask1">
+
+        <EditText
+            android:id="@+id/edt_inputa"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:hint="Nhập số a"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edt_inputb"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/edt_inputa"
+            android:hint="Nhập số b"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/edt_inputb"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/dask"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnResult"
+                android:text="Cộng"
+                android:onClick="btnResult"
+                android:layout_width="match_parent"
+                android:layout_height="72dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

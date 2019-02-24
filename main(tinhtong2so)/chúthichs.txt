@@ -1,0 +1,2 @@
+﻿findViewById là để tìm đến các id mình đã đặt trước đó
+setOnClickListener(new View.OnClickListener() thực hiện nhiệm vụ khi mình chọn vào nút btn
