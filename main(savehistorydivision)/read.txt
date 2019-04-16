@@ -1,0 +1,5 @@
+input : number
+holdlong : delete
+show result on txt
+save history
+toast: isEmpty 
